@@ -1,0 +1,116 @@
+.outer-container{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+
+}
+
+.burger-menu{
+    display: none;
+}
+
+.exit{
+    cursor: pointer;
+}
+
+.heading-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 5px 3px 5px;
+}
+
+.heading-container p{
+    cursor: pointer;
+}
+
+
+.heading-container p:hover{
+
+    color: rgb(234, 229, 229);
+    text-decoration: underline;
+    transition:color all 0.3s ease;
+}
+
+.exit{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.sidemenu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideanim 0.3s ease forwards;
+}
+
+
+@keyframes slideanim{
+
+    from{
+        transform: translateX(100%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+    
+}
+
+
+
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.menu-container p{
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+
+.menu-container p:hover{
+
+    color: black;
+    background-color: white;
+}
+
+@media (max-width:700px){
+
+    .burger-menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .outer-container h1{
+        font-size: 20px;
+    }
+
+    .heading-container{
+        display: none;
+    }
+}
+
+@media (max-width:600px){
+    .outer-container{
+        padding: 4px 6px;
+
+    }
+    .outer-container h1{
+        font-size: 15px;
+    }
+
+}
