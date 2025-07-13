@@ -1,18 +1,6 @@
-.card {
-  max-width: 400px;
-  margin: 100px auto;
-  padding: 2rem;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  font-family: sans-serif;
-  text-align: center;
-}
-
-button {
-  padding: 10px 20px;
-  background: teal;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.main-page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
